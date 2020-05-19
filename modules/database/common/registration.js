@@ -1,54 +1,45 @@
-const db             = require('../dbConnection/pgPool');
-const inputValidator = require('../../inputValidator/inputValidator');
+const db                    = require('../dbConnection/pgPool');
+const inputValidator        = require('../../inputValidator/inputValidator');
+const { infoLog, debugLog } = require('../../logger/logger');
 
 const newUser = (req, response) =>
 {
-    // if(!req.body.company_name || !req.body.registration_number || !req.body.address_1 
-    //     || !req.body.address_2 || !req.body.address_3 || !req.body.district)
-    // {
-    //     return response.status(400).send({'Message': 'Some Values Are Missing.'});
-    // }
+    if(!req.body.house_apartment || !req.body.locality || !req.body.police_station 
+        || !req.body.district || !req.body.landmark || !req.body.post_office)
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Some Values Are Missing.', 'Data': []});
+    }
 
-    // if(!inputValidator.isValidMobileNumber(req.body.contact_number)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid Mobile Number.'});
-    // }
+    if(!inputValidator.isValidMobileNumber(req.body.primary_mobile)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Please Enter a Valid Mobile Number.', 'Data': []});
+    }
 
-    // if(!inputValidator.isValidEmail(req.body.email)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid Email Address.'});
-    // }
+    if(!inputValidator.isValidEmail(req.body.primary_email)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Please Enter a Valid Email Address.', 'Data': []});
+    }
 
-    // if(!inputValidator.isValidPassword(req.body.password)) 
-    // {
-    //     return response.status(400).send({'Message': 'Password Length Should Be In Between 8 to 15 and Must Contain Atleast' + 
-    //    ' One Upper Case, One Lower Case, One Number and One Special Character.'});
-    // }
+    if(!inputValidator.isValidPassword(req.body.password)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Password Length Should Be In Between 8 to' +  
+        ' 15 and Must Contain Atleast One Upper Case, One Lower Case, One Number and One Special Character.', 'Data': []});
+    }
 
-    // if(!inputValidator.isvalidGSTIN(req.body.gstin)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid GSTIN.'});
-    // }
+    if(!inputValidator.isValidString(req.body.first_name)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Please Enter First Name.', 'Data': []});
+    }
 
-    // if(!inputValidator.isValidString(req.body.owner_name)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid Name.'});
-    // }
+    if(!inputValidator.isValidString(req.body.last_name)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Please Enter Last Name.', 'Data': []});
+    }
 
-    // if(!inputValidator.isValidString(req.body.city)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid City Name.'});
-    // }
-
-    // if(!inputValidator.isValidString(req.body.state)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Valid State Name.'});
-    // }
-
-    // if(!inputValidator.isvalidPinCode(req.body.pin_code)) 
-    // {
-    //     return response.status(400).send({'Message': 'Please Enter a Pin Code.'});
-    // }
+    if(!inputValidator.isvalidPinCode(req.body.pincode)) 
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Invalid Pincode.', 'Data': []});
+    }
 
 
     const createQuery = `WITH data(first_name, middle_name, last_name, date_of_birth, honorifics, user_secret, primary_email, 
@@ -59,7 +50,7 @@ const newUser = (req, response) =>
     SELECT (SELECT coalesce(max(user_id)+1, 1) FROM user_master), (SELECT role_type_id FROM role_master WHERE role_type = $17), 
     (SELECT coalesce(max(role_serial)+1, (SELECT serial FROM role_master WHERE role_type = $17)) FROM user_master), 
     (SELECT role_type_value || to_char(now(), 'YY') || (SELECT coalesce(max(role_serial)+1, 
-    (SELECT serial FROM role_master WHERE role_type = $17)) FROM user_master) || serial FROM role_master WHERE role_type = $17)),
+    (SELECT serial FROM role_master WHERE role_type = $17)) FROM user_master) || 'P' FROM role_master WHERE role_type = $17)),
     ins2 AS(INSERT INTO user_address(user_id, slno, address_type, house_apartment, locality, pincode,
     police_station, post_office, district, state_id, country_id, landmark)
     SELECT (SELECT coalesce(max(user_id)+1, 1) FROM user_master), (SELECT coalesce(max(slno)+1, 1) FROM user_address), 
@@ -68,9 +59,8 @@ const newUser = (req, response) =>
     (SELECT country_id FROM country_master WHERE country_name = $19), landmark FROM data),
     ins3 AS(INSERT INTO user_contact_register(user_id, primary_email, primary_mobile) 
     SELECT (SELECT coalesce(max(user_id)+1, 1) FROM user_master), primary_email, primary_mobile FROM data),
-    ins4 AS(INSERT INTO user_secret(user_id, user_secret, last_secret, last_reset_time) SELECT 
-    (SELECT coalesce(max(user_id)+1, 1) FROM user_master), user_secret, ARRAY[user_secret]::TEXT[], 
-    current_timestamp FROM data)
+    ins4 AS(INSERT INTO user_secret(user_id, user_secret) SELECT 
+    (SELECT coalesce(max(user_id)+1, 1) FROM user_master), user_secret FROM data)
     INSERT INTO user_info(user_id, first_name, middle_name, last_name, date_of_birth, honorifics, full_name) 
     SELECT (SELECT coalesce(max(user_id)+1, 1) FROM user_master), first_name, middle_name, last_name, CAST(date_of_birth AS DATE), 
     honorifics, CONCAT(honorifics, ' ', first_name, ' ', middle_name, ' ', last_name) FROM data RETURNING user_id`
@@ -101,16 +91,32 @@ const newUser = (req, response) =>
 
     db.pool.query(createQuery, values, (err, res)=>
     {
-        if(err)
+        if(!err)
         {
-            console.log(err);
-            return response.status(400).send({'Message': 'Error'});
+            db.pool.end;
+            return response.status(201).send({'Status':true, 'Message': 'Registration Completed.', 'Data': []});
+        }
+
+        else if(err.routine === '_bt_check_unique')
+        {
+            db.pool.end;
+            
+            if(err.detail.includes('mobile'))
+            {
+                return response.status(405).send({'Status':false, 'Message': 'User with that Mobile Number Already Exist', 'Data': []});
+            }
+
+            else if(err.detail.includes('email'))
+            {
+                return response.status(405).send({'Status':false, 'Message': 'User with that Email ID Already Exist', 'Data': []});
+            }
         }
 
         else
         {
-            //console.log(res.rows);
-            return response.status(400).send({'Message': res.rows});
+            db.pool.end;
+            debugLog("Signup: " + err);
+            return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});
         }
     });
 }
