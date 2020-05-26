@@ -26,6 +26,8 @@
     "nodemailer": "^6.4.6",
     "password-validator": "^5.0.3",
     "pg": "^8.2.1",
-    "simple-node-logger": "^18.12.24"
+    "redis": "^3.0.2",
+    "simple-node-logger": "^18.12.24",
+    "uuidv4": "^6.0.8"
   }
 }

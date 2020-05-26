@@ -4,20 +4,17 @@ dotenv.config();
 
 module.exports = 
 {
-  generateToken: function(company_name, email, contact_number, email_verified, mobile_verified, created_at, updated_at)
+  generateAccessToken: function(user_code, expire_in, uuid)
   {
-    const token = jwt.sign
-    ({
-      company_name: company_name,
-      email: email,
-      contact_number: contact_number,
-      email_verified: email_verified,
-      mobile_verified: mobile_verified,
-      created_at: created_at,
-      updated_at: updated_at
-    },
-      process.env.PRIVATE_KEY, {expiresIn: process.env.TOKEN_EXP, issuer : process.env.TOKEN_ISSUER}
-    );
-    return token;
+      const token = jwt.sign({ user_code: user_code, token_id : uuid},
+      process.env.PRIVATE_KEY, {expiresIn : expire_in, issuer : process.env.TOKEN_ISSUER, algorithm : process.env.TOKEN_ALGORITHM});
+      return token;
+  },
+
+  generateRefreshToken: function(user_code, expire_in, uuid)
+  {
+      const token = jwt.sign({ user_code: user_code, token_id : uuid},
+      process.env.PRIVATE_KEY, {expiresIn : expire_in, issuer : process.env.TOKEN_ISSUER, algorithm : process.env.TOKEN_ALGORITHM});
+      return token;
   }
 }
