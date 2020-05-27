@@ -5,11 +5,19 @@ const signupRestrictor       = require('../middleware/signupRestrictor');
 const login                  = require('../database/common/login');
 const logout                 = require('../database/common/logout');
 const authentication         = require('../middleware/auth');
+const getUserInfo            = require('../database/common/getDetails');
+const getMenuDetails         = require('../database/common/getMenuDetails');
+const getRoleList            = require('../database/common/getRoleList');
+const regenerateAccsessToken = require('../middleware/accessTokenRegeneration');
 
 
-router.post('/registration', signupRestrictor.signupRestrictor, userRegistration.newUser);
+router.post('/registration', authentication.authentication, signupRestrictor.signupRestrictor, userRegistration.newUser);
 router.post('/login', login.login);
 router.delete('/logout', authentication.authentication, logout.logout);
+router.get('/userDetails', authentication.authentication, getUserInfo.getDetails);
+router.get('/menuList', authentication.authentication, getMenuDetails.getMenuDetails);
+router.get('/roleList', getRoleList.getRoleList);
+router.post('/newAccessToken', regenerateAccsessToken.accessTokenRegeneration);
 
 module.exports = 
 {

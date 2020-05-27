@@ -20,7 +20,7 @@ const login = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Please Enter a Valid Email Address or Mobile Number', 'Data': []});
     }
 
-    const createQuery = `SELECT um.user_code, us.user_secret FROM user_master um
+    const createQuery = `SELECT um.user_code, um.active_flag, us.user_secret FROM user_master um
     INNER JOIN user_secret us ON us.user_id = um.user_id
     WHERE um.user_id = (SELECT user_id FROM user_contact_register WHERE primary_email = $1 OR primary_mobile = $1)`
 
@@ -47,8 +47,15 @@ const login = (req, response) =>
         else if(inputValidator.comparePassword(res.rows[0].user_secret, req.body.password))
         {
             db.pool.end;
+
+            if(res.rows[0].active_flag != 'Y')
+            {
+                return response.status(403).send({'Status':false, 'Message': 'Your Account is Deactivated, Contact With Administrator.',
+                'Data': []});
+            }
+
             const uuid = uuidv4();
-            const refreshToken = tokenGenerator.generateRefreshToken(res.rows[0].user_code, process.env.TOKEN_EXP_REFRESH, uuid);
+            const refreshToken = tokenGenerator.generateRefreshToken(res.rows[0].user_code, uuid);
 
             const redisResponse = redis.client.set(uuid, refreshToken);
 
@@ -58,7 +65,7 @@ const login = (req, response) =>
             }
 
             return response.status(200).send({'Status':true, 'Message': 'User Authorized.',
-            'Data': [{'Access_Token': tokenGenerator.generateAccessToken(res.rows[0].user_code, process.env.TOKEN_EXP_ACCESS, uuid),
+            'Data': [{'Access_Token': tokenGenerator.generateAccessToken(res.rows[0].user_code, uuid),
             'Refresh_Token': refreshToken}]});
         }
 

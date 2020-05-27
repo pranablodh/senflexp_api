@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "e876e406-dc4f-4db3-bacb-9683ed66c6cd",
+		"name": "SenFlexP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Registration",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImQ4MDNlZTM0LTVkNDgtNDhmNC1iM2RiLTdhYmY3MTk2YzI5NyIsImlhdCI6MTU5MDU3MTYyOCwiZXhwIjoxNTkwNTcxNjU4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.0hwrEU_3F0gzIUQRuvcLEf5RjzdBdPVea4pKR1VB-DI",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"first_name\":\"Employee\",\n\t\"middle_name\":\"\",\n\t\"last_name\":\"SenFlexP\",\n\t\"date_of_birth\":\"06/08/1993\",\n\t\"honorifics\":\"Mr.\",\n\t\"password\":\"Qwerty@1234\",\n\t\"primary_email\":\"a@senflex.in\",\n\t\"primary_mobile\":\"4444444444\",\n\t\"address_type\": \"O\",\n\t\"house_apartment\":\"ABC\",\n\t\"locality\":\"Shibtala\",\n\t\"pincode\":700129,\n\t\"police_station\":\"Madhyamgram\",\n\t\"district\":\"24 PGS N\",\n\t\"landmark\":\"Shibtala\",\n\t\"post_office\":\"Madhyamgram\",\n\t\"role_type\":\"Employee\",\n\t\"state_name\":\"West Bengal\",\n\t\"country_name\":\"INDIA\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/common/registration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"registration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":\"9804710805\",\n\t\"password\":\"Qwerty@1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/common/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6Ijk1NGViOWQyLTVjNjAtNGQ2Yy1iY2NjLTgxODk2YjU4N2Y3NSIsImlhdCI6MTU5MDU3MjU1MywiZXhwIjoxNTkwNTcyNTgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.tF6n1Y41j0GCvojyoO_CJ3LRzLdidn4ckANh9dIbKgY",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ti\":\"17496760-de58-4fdb-8090-1d4c8f8f305a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/common/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Personal Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjBkNzRjZjU0LWUzOWQtNDdkYy04NDRhLWJmYTg3YTI0Y2I0YiIsImlhdCI6MTU5MDQ4OTExNywiZXhwIjoxNTkwNDkwOTE3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.SJkvHkhnJ9rguNEBx80Kw_3mdMuMMHNbpz5N__7aS1c",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/common/userDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"userDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Menu List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6IjU0NGZkMjYzLTAzZmYtNGFhYy04MmEyLWE5M2M1ODIwYzY3MCIsImlhdCI6MTU5MDU2MDYxMiwiZXhwIjoxNTkwNTYyNDEyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.IXqKueKwFJO1htMtcB3wjyWRkhHW86NklKhf1EF-TEc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "file",
+					"file": {}
+				},
+				"url": {
+					"raw": "http://localhost:4040/common/menuList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"menuList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Role List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:4040/common/roleList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"roleList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User New Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjMwcyIsImlhdCI6MTU5MDU3MjQwOCwiZXhwIjoxNTkwNTcyNDM4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.L9KSZTZCc83SWJ3F3XrU26TpzOe28eiBOT3R2UeCvsg",
+						"type": "text"
+					},
+					{
+						"key": "x-refresh-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjI2YzdmMmRiLWI4ZDYtNDhhNC1iMzlhLTczOTQ4ZTNiZWNlMyIsImlhdCI6MTU5MDU3MjE4NywiZXhwIjoxNTkwNTczMzg3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.uGYrssvKQ7hxqmK6ikqNeG7dbYimytiASe6H1zOq2fc",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/common/newAccessToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"newAccessToken"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

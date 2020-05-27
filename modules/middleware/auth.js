@@ -1,9 +1,10 @@
-const redis  = require('../tokenFunction/redis');
-const jwt    = require('jsonwebtoken');
-const dotenv = require('dotenv');
+const redis                 = require('../tokenFunction/redis');
+const jwt                   = require('jsonwebtoken');
+const { infoLog, debugLog } = require('../logger/logger');
+const dotenv                = require('dotenv');
 dotenv.config();
 
-const authentication = async(req, response, next) =>
+const authentication = (req, response, next) =>
 {
     const token = req.headers['x-access-token'];
 
@@ -12,7 +13,7 @@ const authentication = async(req, response, next) =>
         return response.status(400).send({'Status':false, 'Message': 'Token is Not Provided', 'Data': []});
     }
 
-    jwt.verify(token, process.env.PRIVATE_KEY, function(err, decoded)
+    jwt.verify(token, process.env.PRIVATE_KEY_ACCESS, function(err, decoded)
     {
         if(err)
         {
@@ -23,6 +24,7 @@ const authentication = async(req, response, next) =>
         {
             if(error_redis)
             {
+                debugLog('Auth: ' + error_redis);
                 return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});
             }
 
@@ -31,7 +33,7 @@ const authentication = async(req, response, next) =>
                 return response.status(401).send({'Status':false, 'Message': 'Access Denied', 'Data': []});
             }
 
-            jwt.verify(res, process.env.PRIVATE_KEY, function(error, decoded_token)
+            jwt.verify(res, process.env.PRIVATE_KEY_REFRESH, function(error, decoded_token)
             {
                 if(error)
                 {

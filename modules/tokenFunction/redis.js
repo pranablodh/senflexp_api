@@ -10,9 +10,14 @@ const client = redis.createClient
     password : process.env.REDIS_PASSWORD
 });
 
-client.on("connect", function () 
+client.on("connect", () => 
 {
     console.log("Redis plugged in.");
+});
+
+client.on("error", (err) => 
+{
+    debugLog('REDIS ERROR: ' + err);
 });
 
 module.exports = 
