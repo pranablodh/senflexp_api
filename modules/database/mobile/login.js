@@ -20,7 +20,7 @@ const login = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Please Enter a Valid Email Address or Mobile Number', 'Data': []});
     }
 
-    const createQuery = `SELECT um.user_code, um.active_flag, us.user_secret, us.reset_flag FROM user_master um
+    const createQuery = `SELECT um.user_code, um.active_flag, um.role_type_id, us.user_secret, us.reset_flag FROM user_master um
     INNER JOIN user_secret us ON us.user_id = um.user_id
     WHERE um.user_id = (SELECT user_id FROM user_contact_register WHERE primary_email = $1 OR primary_mobile = $1)`
 
@@ -51,6 +51,12 @@ const login = (req, response) =>
             if(res.rows[0].active_flag != 'Y')
             {
                 return response.status(403).send({'Status':false, 'Message': 'Your Account is Deactivated, Contact With Administrator.',
+                'Data': []});
+            }
+
+            if(res.rows[0].role_type_id != '4')
+            {
+                return response.status(403).send({'Status':false, 'Message': 'You Are Not Authorized To Use This Application.',
                 'Data': []});
             }
 

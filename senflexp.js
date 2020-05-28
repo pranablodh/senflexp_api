@@ -7,11 +7,13 @@ dotenv.config();
 const portNumber   = process.env.SERVER_PORT;
 const makeDir      = require('./modules/logger/logDirectoryMaker');
 const commonRouter = require('./modules/router/common');
+const mobileRouter = require('./modules/router/mobile');
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(cors());
 app.use('/common', commonRouter.router);
+app.use('/mobile', mobileRouter.router);
 
 makeDir.makeDir();
 

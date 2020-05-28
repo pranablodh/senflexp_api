@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user\":\"9804710805\",\n\t\"password\":\"Qwerty@1234\"\n}",
+					"raw": "{\n\t\"user\":\"9804710805\",\n\t\"password\":\"Qwerty@12346\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,7 +81,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6Ijk1NGViOWQyLTVjNjAtNGQ2Yy1iY2NjLTgxODk2YjU4N2Y3NSIsImlhdCI6MTU5MDU3MjU1MywiZXhwIjoxNTkwNTcyNTgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.tF6n1Y41j0GCvojyoO_CJ3LRzLdidn4ckANh9dIbKgY",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6Ijc1ZDZmOTYzLTMyMTYtNDU3Yy1iNWI1LTZlNTY5YThkNmUxMiIsImlhdCI6MTU5MDY4OTY2NSwiZXhwIjoxNTkwNjkwMjY1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.VQ0pugkHuq950gTTxzOi83soKQvjyruFwAcP1geMpSY",
 						"type": "text"
 					},
 					{
@@ -155,7 +155,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6IjU0NGZkMjYzLTAzZmYtNGFhYy04MmEyLWE5M2M1ODIwYzY3MCIsImlhdCI6MTU5MDU2MDYxMiwiZXhwIjoxNTkwNTYyNDEyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.IXqKueKwFJO1htMtcB3wjyWRkhHW86NklKhf1EF-TEc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjEwbSIsImlhdCI6MTU5MDY4MzY4NywiZXhwIjoxNTkwNjg0Mjg3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.TN6MUMtZCecZ44BdqKelOLBvP-V7LF4fHjXq5Qrtuk4",
 						"type": "text"
 					},
 					{
@@ -210,12 +210,12 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjMwcyIsImlhdCI6MTU5MDU3MjQwOCwiZXhwIjoxNTkwNTcyNDM4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.L9KSZTZCc83SWJ3F3XrU26TpzOe28eiBOT3R2UeCvsg",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhhMjE3YWM3LTcwMGYtNDVjZS1iZTQ1LTFlMTU4MmJiNTU1OCIsImlhdCI6MTU5MDY4MzA1NCwiZXhwIjoxNTkwNjgzNjU0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8CMcSDRnEFg2o7WpEg6Oo1SHs59Gk7MyjDQ1K3JLtLs",
 						"type": "text"
 					},
 					{
 						"key": "x-refresh-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjI2YzdmMmRiLWI4ZDYtNDhhNC1iMzlhLTczOTQ4ZTNiZWNlMyIsImlhdCI6MTU5MDU3MjE4NywiZXhwIjoxNTkwNTczMzg3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.uGYrssvKQ7hxqmK6ikqNeG7dbYimytiASe6H1zOq2fc",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhhMjE3YWM3LTcwMGYtNDVjZS1iZTQ1LTFlMTU4MmJiNTU1OCIsImlhdCI6MTU5MDY4MzA1NCwiZXhwIjoxNTkwNjg0MjU0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.pgF_4lBVh8MK_TQxTf3jJehs44QKdTqgb3Gu3L8uQXs",
 						"type": "text"
 					},
 					{
@@ -233,6 +233,177 @@
 					"port": "4040",
 					"path": [
 						"common",
+						"newAccessToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Chnage Password",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjdiZTM0NGVhLWM2YjktNGEzNC1hMWE4LWQxZTYxN2I4OWQ0ZiIsImlhdCI6MTU5MDY4Mzc1OCwiZXhwIjoxNTkwNjg0MzU4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.lMPh0A8wIkocXsQBQsh5wT5JjaUjFzCjmb7Ly-VHuT4",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"password\":\"Qwerty@12346\",\n\t\"new_password\":\"Qwerty@1234\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4040/common/changePassword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"common",
+						"changePassword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":\"2222222222\",\n\t\"password\":\"Qwerty@1234\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/mobile/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImNkZTQ5MjMxLTFlOGUtNDcyMy04YWY4LTdjOGY1OTc4ODc5YSIsImlhdCI6MTU5MDY4OTY5MSwiZXhwIjoxNTkwNjkwMjkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.x1KyEFmwWILuKoGLQjrb0cKKzCoDb8vUmgDp0SkcIH8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"ti\":\"17496760-de58-4fdb-8090-1d4c8f8f305a\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/mobile/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Personal Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImNkZTQ5MjMxLTFlOGUtNDcyMy04YWY4LTdjOGY1OTc4ODc5YSIsImlhdCI6MTU5MDY4OTY5MSwiZXhwIjoxNTkwNjkwMjkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.x1KyEFmwWILuKoGLQjrb0cKKzCoDb8vUmgDp0SkcIH8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/mobile/userDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"userDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile New Access Token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImNjZjgwYzY4LTQzNGItNGRjYS04ODhkLTAxODMxNzJiNzk4ZCIsImlhdCI6MTU5MDY4OTM4MSwiZXhwIjoxNTkwNjg5OTgxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hNm90HlitBqe8DFAtqKHgG0rZktg3w6kzBrIqM79hU0"
+					},
+					{
+						"key": "x-refresh-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImNjZjgwYzY4LTQzNGItNGRjYS04ODhkLTAxODMxNzJiNzk4ZCIsImlhdCI6MTU5MDY4OTM4MSwiZXhwIjoxNTkwNjkwNTgxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.a0GWGoYMHw8zZytHXlkG0qxIAe-0MwiBT0Q61dE81uw"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/mobile/newAccessToken",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
 						"newAccessToken"
 					]
 				}
