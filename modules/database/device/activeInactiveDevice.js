@@ -8,7 +8,7 @@ const activeInactiveList = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Invalid Choice.', 'Data': []});
     }
 
-    const createQuery = `SELECT device_id, serial_no, active_flag FROM device_master WHERE active_flag = $1`
+    const createQuery = `SELECT serial_no, active_flag FROM device_master WHERE active_flag = $1`
 
     const values = 
     [
@@ -20,8 +20,7 @@ const activeInactiveList = (req, response) =>
         if(err)
         {
             db.pool.end;
-            //debugLog("Add Device: " + err);
-            console.log(err);
+            debugLog("Active Inactive List: " + err);
             return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});
         }
 

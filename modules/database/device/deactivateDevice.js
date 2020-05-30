@@ -1,15 +1,15 @@
 const db                    = require('../dbConnection/pgPool');
 const { infoLog, debugLog } = require('../../logger/logger');
+const inputValidator        = require('../../inputValidator/inputValidator');
 
 const deactivateDevice = (req, response) =>
 {
-
     const createQuery = `UPDATE device_master SET active_flag = 'N', deactivation_time = CURRENT_TIMESTAMP
-    WHERE device_id = $1 RETURNING deactivation_time`
+    WHERE serial_no = $1 RETURNING deactivation_time`
 
     const values = 
     [
-        req.body.device_id
+        req.body.serial_no
     ]
 
     db.pool.query(createQuery, values, (err, res)=>

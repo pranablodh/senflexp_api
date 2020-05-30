@@ -73,5 +73,10 @@ module.exports =
     isValidDate: function(data)
     {
         return /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/.test(data);
+    },
+
+    isValidUnsignedInteger: function(data)
+    {
+        return /^\+?\d+$/.test(data)
     }
 }

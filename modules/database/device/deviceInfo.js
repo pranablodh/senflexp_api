@@ -1,17 +1,18 @@
 const db                    = require('../dbConnection/pgPool');
 const { infoLog, debugLog } = require('../../logger/logger');
+const inputValidator        = require('../../inputValidator/inputValidator');
 
 const deviceInfo = (req, response) =>
-{
+{    
     const createQuery = `SELECT dm.mac_address, dm.active_flag, dm.activation_time, dm.deactivation_time, dm.repair_flag,
-    dm.serial_no, dim.service_uuid, dim.battery_service_uuid, dim.die_temperature_uuid, dim.sensor_device_uuid,
+    dim.service_uuid, dim.battery_service_uuid, dim.die_temperature_uuid, dim.sensor_device_uuid, dim.device_id_uuid,
     dim.manufacturer_name, dim.manufacture_date, dim.batch_no FROM device_master dm
     INNER JOIN device_info_master dim ON dim.device_info_id = dm.device_info_id
-    WHERE dm.device_id = $1`
+    WHERE dm.serial_no = $1`
 
     const values = 
     [
-        req.body.device_id
+        req.body.serial_no
     ];
 
     db.pool.query(createQuery, values, (err, res)=>

@@ -3,7 +3,7 @@ const { infoLog, debugLog } = require('../../logger/logger');
 
 const deviceList = (req, response) =>
 {
-    const createQuery = `SELECT device_id, serial_no, active_flag FROM device_master`
+    const createQuery = `SELECT serial_no, active_flag FROM device_master`
 
     db.pool.query(createQuery, (err, res)=>
     {

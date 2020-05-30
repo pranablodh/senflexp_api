@@ -3,7 +3,7 @@ const { infoLog, debugLog } = require('../../logger/logger');
 
 const repairingQueue = (req, response) =>
 {
-    const createQuery = `SELECT device_id, serial_no FROM device_master WHERE repair_flag = 'Y'`
+    const createQuery = `SELECT serial_no FROM device_master WHERE repair_flag = 'Y'`
 
     db.pool.query(createQuery, (err, res)=>
     {

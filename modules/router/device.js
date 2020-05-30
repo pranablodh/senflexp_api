@@ -13,6 +13,7 @@ const deactivateDevice       = require('../database/device/deactivateDevice');
 const repairDevice           = require('../database/device/repairDevice');
 const repairedDevice         = require('../database/device/repairedDevice');
 const reparingQueue          = require('../database/device/repairingQueue');
+const assignToConsumer       = require('../database/device/assignToConsumer');
 
 
 router.post('/addBatch', authentication.authentication, empAdminValidator.empAdminValidator, addBatch.addbatch);
@@ -26,6 +27,7 @@ router.put('/deactivateDevice', authentication.authentication, empAdminValidator
 router.put('/addToRepairList', authentication.authentication, empAdminValidator.empAdminValidator, repairDevice.repairDevice);
 router.put('/repairedDevice', authentication.authentication, empAdminValidator.empAdminValidator, repairedDevice.repairedDevice);
 router.get('/reparingQueue', authentication.authentication, empAdminValidator.empAdminValidator, reparingQueue.repairingQueue);
+router.post('/assignToConsumer', authentication.authentication, empAdminValidator.empAdminValidator, assignToConsumer.assignToConsumer);
 
 module.exports = 
 {
