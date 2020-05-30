@@ -81,7 +81,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6Ijc1ZDZmOTYzLTMyMTYtNDU3Yy1iNWI1LTZlNTY5YThkNmUxMiIsImlhdCI6MTU5MDY4OTY2NSwiZXhwIjoxNTkwNjkwMjY1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.VQ0pugkHuq950gTTxzOi83soKQvjyruFwAcP1geMpSY",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE",
 						"type": "text"
 					},
 					{
@@ -210,12 +210,12 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhhMjE3YWM3LTcwMGYtNDVjZS1iZTQ1LTFlMTU4MmJiNTU1OCIsImlhdCI6MTU5MDY4MzA1NCwiZXhwIjoxNTkwNjgzNjU0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8CMcSDRnEFg2o7WpEg6Oo1SHs59Gk7MyjDQ1K3JLtLs",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjIwN2Y1YmJhLTEwOTAtNGU1ZC04NDVhLTU4YzkzZTNkMGIzOSIsImlhdCI6MTU5MDgyMDg5NiwiZXhwIjoxNTkwODIxNDk2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.6abRQl0NMKwWFIRqKZ1z4Hb9ieJgbprkCCA49J2tRl4",
 						"type": "text"
 					},
 					{
 						"key": "x-refresh-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhhMjE3YWM3LTcwMGYtNDVjZS1iZTQ1LTFlMTU4MmJiNTU1OCIsImlhdCI6MTU5MDY4MzA1NCwiZXhwIjoxNTkwNjg0MjU0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.pgF_4lBVh8MK_TQxTf3jJehs44QKdTqgb3Gu3L8uQXs",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjIwN2Y1YmJhLTEwOTAtNGU1ZC04NDVhLTU4YzkzZTNkMGIzOSIsImlhdCI6MTU5MDgyMDg5NiwiZXhwIjoxNTkwODIyMDk2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.qUHc1JGUmZatzzM_9xvNeMbk6rnthJUtJK3xp7l6ix8",
 						"type": "text"
 					},
 					{
@@ -405,6 +405,461 @@
 					"path": [
 						"mobile",
 						"newAccessToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Add Batch.",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImUwMzBlZDY3LTY1NmQtNDdjOS04NmE2LTcxMjkyMTExODlmYiIsImlhdCI6MTU5MDgyODE0MSwiZXhwIjoxNTkwODI4NzQxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.q7Yu44XDRqn11X7oA_3UelYfL2WHZmv5AIJtb5OPHKg",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"manufacturer_name\":\"SenFlex Corporation.\",\n\t\"batch_no\":\"SenP-300520-002\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/addBatch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"addBatch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Add Device",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjE1ODMxNDFjLWE3OWEtNDY5ZC1hNTFhLWJlODZkY2E0ODAxYSIsImlhdCI6MTU5MDgyODkzMiwiZXhwIjoxNTkwODI5NTMyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8MTcVCNJNhKQiI7o_f5b_vg9ajVjn9eHWh8nm87S3vk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"batch_no\":\"SenP-300520-001\",\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/addDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"addDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Batch Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjM3NzM3OTgyLTE2Y2EtNGUyOC05OGNlLWNkNjVjMjRlNjhiZiIsImlhdCI6MTU5MDgyOTQ5MSwiZXhwIjoxNTkwODMwMDkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.Ms382MHc8nRRCDzoSk1NPfRQ6PBzWkawfO6DuW5IcgE"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/batchInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"batchInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Device Info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"device_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/deviceInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"deviceInfo"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Device List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImYzNDUyMTEwLTE3ZDctNDdlOC1hZGE3LThhN2I3YjhhZTY2MiIsImlhdCI6MTU5MDgyOTg5NSwiZXhwIjoxNTkwODMwNDk1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.QFVvlRL_OSfr0K_Le5Uiw2k9AplFzWlpzvAlqV8JIfA"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/deviceList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"deviceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Active/Inactive List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"active_flag\":\"Y\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/activeInactiveDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"activeInactiveDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Activate Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"device_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/activateDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"activateDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Deactivate Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"device_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/deactivateDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"deactivateDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Add to Reparing List",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"device_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/addToRepairList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"addToRepairList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Add to Repaired Device List",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"device_id\":1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/repairedDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"repairedDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Reparing Queue",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/reparingQueue",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"reparingQueue"
 					]
 				}
 			},

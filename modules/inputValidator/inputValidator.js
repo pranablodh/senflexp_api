@@ -1,8 +1,8 @@
 const bcrypt            = require('bcrypt');
 const passwordValidator = require('password-validator');
+const {isUuid}          = require('uuidv4');
 const salt_round        = 10; 
-
-const schema = new passwordValidator();
+const schema            = new passwordValidator();
 
 schema.is().min(8).is().max(15).has().uppercase().has().lowercase()                              
 .has().digits().has().symbols().has().not().spaces()
@@ -63,5 +63,15 @@ module.exports =
             },0); 
         }
         return regTest;
+    },
+
+    isValidUUID: function(data)
+    {
+        return isUuid(data);
+    },
+
+    isValidDate: function(data)
+    {
+        return /^([0-9]{2})\/([0-9]{2})\/([0-9]{4})$/.test(data);
     }
 }
