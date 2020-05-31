@@ -1,7 +1,7 @@
 const db                    = require('../database/dbConnection/pgPool');
 const { infoLog, debugLog } = require('../logger/logger');
 
-const empAdminValidator = (req, response, next) =>
+const consumerValidator = (req, response, next) =>
 {   
     const createQuery = `SELECT role_type_id FROM user_master WHERE user_code = $1`
 
@@ -15,7 +15,7 @@ const empAdminValidator = (req, response, next) =>
         if(err)
         {
             db.pool.end;
-            debugLog("Emp Admin Validator: " + err);
+            debugLog("Technician Validator: " + err);
             return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});
         }
 
@@ -29,7 +29,7 @@ const empAdminValidator = (req, response, next) =>
         {
             db.pool.end;
 
-            if(res.rows[0].role_type_id != '1' && res.rows[0].role_type_id != '2')
+            if(res.rows[0].role_type_id != '3')
             {
                 return response.status(403).send({'Status':false, 'Message': 'You Are Not Authorized To Do This Operation.',
                 'Data': []});
@@ -42,5 +42,5 @@ const empAdminValidator = (req, response, next) =>
 
 module.exports = 
 {
-    empAdminValidator
+    consumerValidator
 }

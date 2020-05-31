@@ -11,13 +11,12 @@ const assignToConsumer = (req, response) =>
 
     const createQuery = `INSERT INTO consumer_device_list(consumer_id, device_id) VALUES(
     (SELECT consumer_id FROM consumer_master WHERE consumer_id = (SELECT user_id FROM 
-    user_master WHERE user_id = (SELECT user_id FROM user_contact_register WHERE primary_email =$1
-    OR primary_mobile = $1) AND role_type_id = '3')), (SELECT device_id FROM device_master WHERE serial_no = $2 
-    AND active_flag = 'Y' AND repair_flag = 'N')) RETURNING *`
+    user_master WHERE user_code = $1 AND role_type_id = '3')), (SELECT device_id FROM 
+    device_master WHERE serial_no = $2 AND active_flag = 'Y' AND repair_flag = 'N')) RETURNING *`
 
     const values = 
     [
-        req.body.user,
+        req.body.user_code,
         req.body.serial_no
     ]
 

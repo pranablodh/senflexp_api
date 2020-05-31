@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user\":\"9804710805\",\n\t\"password\":\"Qwerty@12346\"\n}",
+					"raw": "{\n\t\"user\":\"1111111111\",\n\t\"password\":\"Qwerty@1234\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -81,7 +81,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o",
 						"type": "text"
 					},
 					{
@@ -121,7 +121,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjBkNzRjZjU0LWUzOWQtNDdkYy04NDRhLWJmYTg3YTI0Y2I0YiIsImlhdCI6MTU5MDQ4OTExNywiZXhwIjoxNTkwNDkwOTE3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.SJkvHkhnJ9rguNEBx80Kw_3mdMuMMHNbpz5N__7aS1c",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjM4NzEyNTI2LTcyODktNDZjOC1hZTQzLTFhZjE5ODA3YjcwYyIsImlhdCI6MTU5MDkwOTM2NywiZXhwIjoxNTkwOTA5OTY3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.zvRI9f-Hw0B4u1jBkfKtA5wpGPAtiOFGNf_e8MsZ0h0",
 						"type": "text"
 					},
 					{
@@ -155,7 +155,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjEwbSIsImlhdCI6MTU5MDY4MzY4NywiZXhwIjoxNTkwNjg0Mjg3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.TN6MUMtZCecZ44BdqKelOLBvP-V7LF4fHjXq5Qrtuk4",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6IjdiZjdlNjJmLTg5MjgtNDM2Zi1hOGRhLTVkNTEyNWY4ZjYyNiIsImlhdCI6MTU5MDkwOTg5NywiZXhwIjoxNTkwOTEwNDk3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.kxHoZQhxQK0iaWUXCPwxwD0zgwm80HrkUru6-mu_hzw",
 						"type": "text"
 					},
 					{
@@ -501,7 +501,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjM3NzM3OTgyLTE2Y2EtNGUyOC05OGNlLWNkNjVjMjRlNjhiZiIsImlhdCI6MTU5MDgyOTQ5MSwiZXhwIjoxNTkwODMwMDkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.Ms382MHc8nRRCDzoSk1NPfRQ6PBzWkawfO6DuW5IcgE"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhmZDY3OGMzLWVjNzAtNDQ1My04ZThkLTA5MTkxYThmMmRkZSIsImlhdCI6MTU5MDg1NTYwNiwiZXhwIjoxNTkwODU2MjA2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.PdjlXPwWSSL6Um80d6HsG8bZdTcZ9i8W0ILF9vJHirc"
 					},
 					{
 						"key": "Content-Type",
@@ -544,7 +544,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhmZDY3OGMzLWVjNzAtNDQ1My04ZThkLTA5MTkxYThmMmRkZSIsImlhdCI6MTU5MDg1NTYwNiwiZXhwIjoxNTkwODU2MjA2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.PdjlXPwWSSL6Um80d6HsG8bZdTcZ9i8W0ILF9vJHirc"
 					},
 					{
 						"key": "Content-Type",
@@ -554,7 +554,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"device_id\":1\n}",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -587,7 +587,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImYzNDUyMTEwLTE3ZDctNDdlOC1hZGE3LThhN2I3YjhhZTY2MiIsImlhdCI6MTU5MDgyOTg5NSwiZXhwIjoxNTkwODMwNDk1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.QFVvlRL_OSfr0K_Le5Uiw2k9AplFzWlpzvAlqV8JIfA"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjhmZDY3OGMzLWVjNzAtNDQ1My04ZThkLTA5MTkxYThmMmRkZSIsImlhdCI6MTU5MDg1NTYwNiwiZXhwIjoxNTkwODU2MjA2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.PdjlXPwWSSL6Um80d6HsG8bZdTcZ9i8W0ILF9vJHirc"
 					},
 					{
 						"key": "Content-Type",
@@ -630,7 +630,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImJlNWVjZWNkLWFhOTAtNGFiZC04ZTg2LWY3MDg4ZDAxMDczMiIsImlhdCI6MTU5MDg1NjA0MywiZXhwIjoxNTkwODU2NjQzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.AaEeyKM6uKuwmWp8UDBazTO3PG5ncv5IqQf8NBWQr7Q"
 					},
 					{
 						"key": "Content-Type",
@@ -640,7 +640,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"active_flag\":\"Y\"\n}",
+					"raw": "{\n\t\"active_flag\":\"N\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -670,7 +670,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImJlNWVjZWNkLWFhOTAtNGFiZC04ZTg2LWY3MDg4ZDAxMDczMiIsImlhdCI6MTU5MDg1NjA0MywiZXhwIjoxNTkwODU2NjQzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.AaEeyKM6uKuwmWp8UDBazTO3PG5ncv5IqQf8NBWQr7Q"
 					},
 					{
 						"key": "Content-Type",
@@ -680,7 +680,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"device_id\":1\n}",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -710,7 +710,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjNkOTRiODFlLTkwMjUtNGM2ZC04NmMwLWZlODc0OTYyZGNlYyIsImlhdCI6MTU5MDgzMTg4OSwiZXhwIjoxNTkwODMyNDg5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hhrTPFWZTOEYQX-yXR4hRmpwNRk_DaVMQ84iGuesiOE"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImJlNWVjZWNkLWFhOTAtNGFiZC04ZTg2LWY3MDg4ZDAxMDczMiIsImlhdCI6MTU5MDg1NjA0MywiZXhwIjoxNTkwODU2NjQzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.AaEeyKM6uKuwmWp8UDBazTO3PG5ncv5IqQf8NBWQr7Q"
 					},
 					{
 						"key": "Content-Type",
@@ -720,7 +720,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"device_id\":1\n}",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -750,7 +750,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImJlNWVjZWNkLWFhOTAtNGFiZC04ZTg2LWY3MDg4ZDAxMDczMiIsImlhdCI6MTU5MDg1NjA0MywiZXhwIjoxNTkwODU2NjQzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.AaEeyKM6uKuwmWp8UDBazTO3PG5ncv5IqQf8NBWQr7Q"
 					},
 					{
 						"key": "Content-Type",
@@ -760,7 +760,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"device_id\":1\n}",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -790,7 +790,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6IjBmZjNmZTI0LWU4NzUtNDNkNy04ZTNiLTBjZjdmNWI0MjlhOCIsImlhdCI6MTU5MDkzODMwOCwiZXhwIjoxNTkwOTM4OTA4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.6WiSCLVwdfu4nLqyEb8k36n6k1OCeovAekPceaT42Sk"
 					},
 					{
 						"key": "Content-Type",
@@ -800,7 +800,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"device_id\":1\n}",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -833,7 +833,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjUzZDdjNjQ1LTI4MTEtNDQxOS1hNmRkLTRiYjFiZTdhNDAyZCIsImlhdCI6MTU5MDgzMzIzNSwiZXhwIjoxNTkwODMzODM1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8e4lYyPOWCu5Jxk2Bmjh8rYdL7c6DLPpPLGXR4JiFLk"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6IjQ5Y2FjZGIwLTIyOGEtNDM2Zi1iNWY3LWYzOTdlMjZkYzBlYyIsImlhdCI6MTU5MDkzODE1MiwiZXhwIjoxNTkwOTM4NzUyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.rO0U_DHn63j0U4FK1gG-fvMVB0_TqtCS00pSKhSXK7A"
 					},
 					{
 						"key": "Content-Type",
@@ -860,6 +860,455 @@
 					"path": [
 						"device",
 						"reparingQueue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Device Assign Consumer",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjY5YTg0MDRhLTlkODgtNDMxYy1hZGUwLTEzY2RiZjg0NTAwNSIsImlhdCI6MTU5MDg2MjQwNywiZXhwIjoxNTkwODYzMDA3LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.KZyzjfD4zo4i5yHFzAZIOvunG5Ro24luOE2rhgACqhY"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"user\":\"1111111111\",\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/device/assignToConsumer",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"device",
+						"assignToConsumer"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Self Details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImEwMjMyN2Y5LTg2MDUtNDEyOC1hYjBkLTA1MDkzNzI5MDRjZCIsImlhdCI6MTU5MDg2MjA0NSwiZXhwIjoxNTkwODYyNjQ1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.CbsaqeMedlQv6vafCLZfrntz7s3JvsbehL6e8OYricU"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lab_name\":\"NICED\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/selfDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"selfDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Assign Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"technician_user_code\":\"T2015P\",\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/assignDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"assignDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Revoke Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"technician_user_code\":\"T2015P\",\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/revoke",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"revoke"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Repair Request",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImQ4NjEyYmU3LWQ1MGQtNDFiZC1iOGM1LWM2ZjE1ZjI5MjFjYiIsImlhdCI6MTU5MDkzNzk2MywiZXhwIjoxNTkwOTM4NTYzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.5y-Rcs68chlUQusDQe2x7PB7fD3-cpE11HlYxscZB3Y"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/repairRequest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"repairRequest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Activate Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImNmMDI3Y2IwLTIwNDItNGRhMi05MjEyLTY4Mjk1ZTU2YmIwOCIsImlhdCI6MTU5MDkzOTQzNiwiZXhwIjoxNTkwOTQwMDM2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.Rw5tA79G0Zin2YPeRERu53HBpelqmC7IfQkQOK_8Zpo"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/activateDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"activateDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Deactivate Device",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"serial_no\":\"SenP-0001\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/deactivateDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"deactivateDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Device List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImQ4ZWZlOGViLWFhOTQtNDE0NC05M2FlLWRhOWE1NTg5ZTExMSIsImlhdCI6MTU5MDkzNzI3NCwiZXhwIjoxNTkwOTM3ODc0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8nQXFktbCP6KTg0_7g7-XSloBaEJhatYlpahDw28ws8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/deviceList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"deviceList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Assigned Device List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/assignedDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"assignedDevice"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Technician List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImQ4ZWZlOGViLWFhOTQtNDE0NC05M2FlLWRhOWE1NTg5ZTExMSIsImlhdCI6MTU5MDkzNzI3NCwiZXhwIjoxNTkwOTM3ODc0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8nQXFktbCP6KTg0_7g7-XSloBaEJhatYlpahDw28ws8"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/techList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"techList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Technician Self Details",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJFMjAxNlAiLCJ0b2tlbl9pZCI6ImI3OTgyNjgzLTNlMmQtNDM4YS1iMzI1LTg3YTkyNWUwMTkxMiIsImlhdCI6MTU5MDkwNzY5MywiZXhwIjoxNTkwOTA4MjkzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.oqLTg-obc70E4lEqXu-RZ6h8rdiRKMRAWxiu7tDFFv0"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"lab_email_mobile\":\"1111111111\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/technician/selfDetails",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"technician",
+						"selfDetails"
 					]
 				}
 			},
