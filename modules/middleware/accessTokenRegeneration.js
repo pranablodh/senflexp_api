@@ -49,8 +49,10 @@ const accessTokenRegeneration = (req, response) =>
                         return response.status(401).send({'Status':false, 'Message': 'Access Denied', 'Data': []});
                     }
 
-                    const newAccessToken = tokenGenerator.generateAccessToken(decoded_rt.user_code, 
-                    process.env.TOKEN_EXP_ACCESS, decoded_rt.token_id);
+                    console.log(decoded_rt.user_code);
+                    console.log()
+
+                    const newAccessToken = tokenGenerator.generateAccessToken(decoded_rt.user_code, decoded_rt.token_id);
 
                     return response.status(200).send({'Status':true, 'Message': 'New Access Token Generated.',
                     'Data': [{'Access_Token': newAccessToken}]});

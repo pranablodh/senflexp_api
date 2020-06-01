@@ -81,7 +81,7 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImJhZmY4YWNkLWEyMjItNDNiNC04M2JiLWZjYjIyYTFjNzhhZSIsImlhdCI6MTU5MTAxNjM2MiwiZXhwIjoxNTkxMDE2MzcyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.6Li7m_xq8Y_hG3tcgfclQV9mXw1opeyqiTD9qOOF2U8",
 						"type": "text"
 					},
 					{
@@ -92,7 +92,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"ti\":\"17496760-de58-4fdb-8090-1d4c8f8f305a\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -210,12 +210,12 @@
 				"header": [
 					{
 						"key": "x-access-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjIwN2Y1YmJhLTEwOTAtNGU1ZC04NDVhLTU4YzkzZTNkMGIzOSIsImlhdCI6MTU5MDgyMDg5NiwiZXhwIjoxNTkwODIxNDk2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.6abRQl0NMKwWFIRqKZ1z4Hb9ieJgbprkCCA49J2tRl4",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6IjEwcyIsImlhdCI6MTU5MTAxNjE4MCwiZXhwIjoxNTkxMDE2MTkwLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.SIq-9NOm4Gb_LwYwHldyeJ6kvk0H23gcie72u1NGBdg",
 						"type": "text"
 					},
 					{
 						"key": "x-refresh-token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjIwN2Y1YmJhLTEwOTAtNGU1ZC04NDVhLTU4YzkzZTNkMGIzOSIsImlhdCI6MTU5MDgyMDg5NiwiZXhwIjoxNTkwODIyMDk2LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.qUHc1JGUmZatzzM_9xvNeMbk6rnthJUtJK3xp7l6ix8",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImJhZmY4YWNkLWEyMjItNDNiNC04M2JiLWZjYjIyYTFjNzhhZSIsImlhdCI6MTU5MTAxNjEyOCwiZXhwIjoxNTkxMDE3MzI4LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.luVPWOVBCiQSiTYyEed3Of1LqZu5d5wpMx8qNsE9cLo",
 						"type": "text"
 					},
 					{
@@ -351,7 +351,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImNkZTQ5MjMxLTFlOGUtNDcyMy04YWY4LTdjOGY1OTc4ODc5YSIsImlhdCI6MTU5MDY4OTY5MSwiZXhwIjoxNTkwNjkwMjkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.x1KyEFmwWILuKoGLQjrb0cKKzCoDb8vUmgDp0SkcIH8"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjE2N2U3YmU3LTA0ODItNGI0MC1hYmY2LWE5M2Y0ZjNkZTg3NCIsImlhdCI6MTU5MDk0NzgxNCwiZXhwIjoxNTkwOTQ4NDE0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.IUtSUzxW8b-xcHR7W4QeQab-lbVgz5dx420_vmiJY5s"
 					},
 					{
 						"key": "Content-Type",
@@ -369,6 +369,37 @@
 					"path": [
 						"mobile",
 						"userDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Assigned Device",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImQyMTJiYzgyLTI2Y2QtNDcyNi1hNDExLWRmMGViMjhjZWU4MCIsImlhdCI6MTU5MDk5ODk4MCwiZXhwIjoxNTkwOTk5NTgwLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.POLlGCYVfEkuqitiyUiCwekswayth6DuBLQIjEFP6nk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/mobile/assignedDevice",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"assignedDevice"
 					]
 				}
 			},
@@ -405,6 +436,79 @@
 					"path": [
 						"mobile",
 						"newAccessToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Submit Test",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImQ1YjQxNjY0LTRhNTItNGZjYS04MmIzLWEwNjRkZWZmZGE5ZCIsImlhdCI6MTU5MTAxNDk1OSwiZXhwIjoxNTkxMDE1NTU5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.dEnEQ9OXgBbE4qOSz47LUed7XfdQJiRjJ5Vjtgl3S_M"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"test_id\":\"NICED-1\",\n    \"device_id\":\"SenP-0001\",\n    \"patient_name\":\"Pranab Lodh\",\n    \"dob\":\"06/08/1993\",\n    \"sex\":\"Other\",\n    \"mobile\":\"9804710805\",\n    \"email\":\"pranablodh@outlook.com\",\n    \"picture\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_data\":\"MTAsMjAwLA0KMjAsMTAw\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4040/mobile/submitTest",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"submitTest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Mobile Test List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjJhNGYyMTgwLTA2ODUtNDRhMy04MzQxLTM5MmY5YTJmM2NiNyIsImlhdCI6MTU5MTAwMTU2MiwiZXhwIjoxNTkxMDAyMTYyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.PFP7aiYLuC40GJYVD3mdBgSIH66kObb3Oyw2DAg9UEg"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:4040/mobile/testList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"mobile",
+						"testList"
 					]
 				}
 			},
@@ -953,7 +1057,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6IjgwNTk3YzY1LWQyMzEtNDgzZS1iMGY1LTY3MTkwY2Q4NGQ0MCIsImlhdCI6MTU5MTAxNDkzMiwiZXhwIjoxNTkxMDE1NTMyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.JT685j04REENgXxSm8rrQjKo25vEfnHaj5PTs75Gfxc"
 					},
 					{
 						"key": "Content-Type",
@@ -993,7 +1097,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6IjAxNmQ2NDA3LTliZTAtNGI5ZS1hYWIxLTYwMjJhNDNmNDMxZSIsImlhdCI6MTU5MTAxNTAxNCwiZXhwIjoxNTkxMDE1NjE0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.iYYXjcpsPb8mPmycEHVN-MFmi_j5xwqIsOcP-XUaXnQ"
 					},
 					{
 						"key": "Content-Type",
@@ -1156,7 +1260,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImQ4ZWZlOGViLWFhOTQtNDE0NC05M2FlLWRhOWE1NTg5ZTExMSIsImlhdCI6MTU5MDkzNzI3NCwiZXhwIjoxNTkwOTM3ODc0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.8nQXFktbCP6KTg0_7g7-XSloBaEJhatYlpahDw28ws8"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImM2Njc2ZTNmLWFmNjItNGI2OS1hNmEyLTAzZmMzZWM4MmVmNyIsImlhdCI6MTU5MDk0ODEzMywiZXhwIjoxNTkwOTQ4NzMzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.HjahPLbW8sguHR62u6kuUymCYdkNbCb2VnNClFbRFnQ"
 					},
 					{
 						"key": "Content-Type",
@@ -1199,7 +1303,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImYxYjM5ZTQ2LTA4YWUtNDQ0ZS05ZjJlLWVmZTJkZmM0OWIzYiIsImlhdCI6MTU5MDkzOTYyMywiZXhwIjoxNTkwOTQwMjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.S2q480FfzBc_eAsMAxPTlVtwwgC6Aog5ewJrbWd5S2o"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImM2Njc2ZTNmLWFmNjItNGI2OS1hNmEyLTAzZmMzZWM4MmVmNyIsImlhdCI6MTU5MDk0ODEzMywiZXhwIjoxNTkwOTQ4NzMzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.HjahPLbW8sguHR62u6kuUymCYdkNbCb2VnNClFbRFnQ"
 					},
 					{
 						"key": "Content-Type",
@@ -1269,6 +1373,49 @@
 					"path": [
 						"consumer",
 						"techList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumer Test List",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"type": "text",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJDMjAxM1AiLCJ0b2tlbl9pZCI6ImJjYTE5NmMyLTAzMGQtNDM0NS05MmEyLWRhZWE0NGU5YThkNyIsImlhdCI6MTU5MTAwMzYyMywiZXhwIjoxNTkxMDA0MjIzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.NwIOsDRpLGgstNaKDFZxlKWN7zKg7yMvNOqC2LcV2Vk"
+					},
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/consumer/testList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"consumer",
+						"testList"
 					]
 				}
 			},

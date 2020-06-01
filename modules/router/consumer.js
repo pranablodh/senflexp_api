@@ -12,6 +12,7 @@ const assignedDeviceList     = require('../database/consumer/assignedDeviceList'
 const repairRequest          = require('../database/consumer/repairRequest');
 const activateDevice         = require('../database/consumer/activateDevice');
 const deactivateDevice       = require('../database/consumer/deactivateDevice');
+const testList               = require('../database/consumer/testDetails');
 
 router.post('/selfDetails', authentication.authentication, selfDetails.selfDetails);
 router.put('/assignDevice', authentication.authentication, consumerValidator.consumerValidator, selfTechValidator.technicianValidator, assignDevice.assignToTechnician);
@@ -22,6 +23,7 @@ router.get('/assignedDevice', authentication.authentication, assignedDeviceList.
 router.put('/repairRequest', authentication.authentication, repairRequest.repairRequest);
 router.put('/activateDevice', authentication.authentication, activateDevice.activateDevice);
 router.put('/deactivateDevice', authentication.authentication, deactivateDevice.deactivateDevice);
+router.get('/testList', authentication.authentication, testList.testDetails);
 
 module.exports = 
 {

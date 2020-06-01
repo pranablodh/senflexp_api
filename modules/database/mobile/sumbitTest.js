@@ -40,6 +40,11 @@ const submitTest = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Invalid Picture Data.', 'Data': []});
     }
 
+    if(req.body.sex != 'Male' & req.body.sex != 'Female' & req.body.sex != 'Other')
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Invalid Gender.', 'Data': []});
+    }
+
     const createQuery = `WITH
     upd AS(UPDATE consumer_device_list SET operation_cycle = (SELECT coalesce(max(operation_cycle)+1, 1) FROM consumer_device_list
     WHERE device_id = (SELECT device_id FROM consumer_device_list WHERE device_id = (SELECT device_id FROM device_master
