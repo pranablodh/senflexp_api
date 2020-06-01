@@ -1,6 +1,7 @@
 const bcrypt            = require('bcrypt');
 const passwordValidator = require('password-validator');
 const {isUuid}          = require('uuidv4');
+const isBase64          = require('is-base64');
 const salt_round        = 10; 
 const schema            = new passwordValidator();
 
@@ -77,6 +78,11 @@ module.exports =
 
     isValidUnsignedInteger: function(data)
     {
-        return /^\+?\d+$/.test(data)
+        return /^\+?\d+$/.test(data);
+    },
+
+    isVaidBase64String: function(data)
+    {
+        return isBase64(data);
     }
 }

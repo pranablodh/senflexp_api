@@ -34,7 +34,7 @@ const login = (req, response) =>
         if(err)
         {
             db.pool.end;
-            debugLog('Login: ', err);
+            debugLog('Mobile Login: ', err);
             return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});               
         }
 
