@@ -17,7 +17,7 @@ const authentication = (req, response, next) =>
     {
         if(err)
         {
-            return response.status(401).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
+            return response.status(403).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
         }
 
         redis.client.get(decoded.token_id, function(error_redis, res)
