@@ -24,7 +24,7 @@ const accessTokenRegeneration = (req, response) =>
     {
         if(!err)
         {
-            return response.status(200).send({'Status':true, 'Message': 'Valid Access Token, Please Use it.', 'Data': []});
+            return response.status(406).send({'Status':false, 'Message': 'Valid Access Token, Please Use it.', 'Data': []});
         }
 
         if(err.name === 'TokenExpiredError')
@@ -33,7 +33,7 @@ const accessTokenRegeneration = (req, response) =>
             {
                 if(err_rt)
                 {
-                    return response.status(400).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
+                    return response.status(401).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
                 }
 
                 redis.client.get(decoded_rt.token_id, function(error_redis, res)
