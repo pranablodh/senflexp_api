@@ -311,7 +311,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImNkZTQ5MjMxLTFlOGUtNDcyMy04YWY4LTdjOGY1OTc4ODc5YSIsImlhdCI6MTU5MDY4OTY5MSwiZXhwIjoxNTkwNjkwMjkxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.x1KyEFmwWILuKoGLQjrb0cKKzCoDb8vUmgDp0SkcIH8"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzMzgwN2ViLTY5YjItNDMzNS1hYjZlLTQ3NmU0MDhhZTQyNyIsImlhdCI6MTU5MTQyMTc4MywiZXhwIjoxNTkxNDIyMzgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.1Wg0dsGx0qGd6eQygBFCGBE0H7-0DKLTZOnqV2uQNDI"
 					},
 					{
 						"key": "Content-Type",
@@ -413,12 +413,12 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImNjZjgwYzY4LTQzNGItNGRjYS04ODhkLTAxODMxNzJiNzk4ZCIsImlhdCI6MTU5MDY4OTM4MSwiZXhwIjoxNTkwNjg5OTgxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.hNm90HlitBqe8DFAtqKHgG0rZktg3w6kzBrIqM79hU0"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjlhYWIzNDdkLTZhYTgtNGEyMC05ZTNiLTU5ODdkYWVmYmRjZiIsImlhdCI6MTU5MTQyMTU4MCwiZXhwIjoxNTkxNDIxNTkwLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.JJMlYWaQM0q-7k7PzwGgk2OJcxdswsOmPV2ySni4QLo"
 					},
 					{
 						"key": "x-refresh-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6ImNjZjgwYzY4LTQzNGItNGRjYS04ODhkLTAxODMxNzJiNzk4ZCIsImlhdCI6MTU5MDY4OTM4MSwiZXhwIjoxNTkwNjkwNTgxLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.a0GWGoYMHw8zZytHXlkG0qxIAe-0MwiBT0Q61dE81uw"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjlhYWIzNDdkLTZhYTgtNGEyMC05ZTNiLTU5ODdkYWVmYmRjZiIsImlhdCI6MTU5MTQyMTQ2MCwiZXhwIjozMzE0OTAyMTQ2MCwiaXNzIjoiaHR0cHM6Ly9zZW5mbGV4LmluIn0.vTezHLVaYkRinNDHvSWK3hXj__zLCFOlUwiIk8GbF7Q"
 					},
 					{
 						"key": "Content-Type",
@@ -449,7 +449,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImQ1YjQxNjY0LTRhNTItNGZjYS04MmIzLWEwNjRkZWZmZGE5ZCIsImlhdCI6MTU5MTAxNDk1OSwiZXhwIjoxNTkxMDE1NTU5LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.dEnEQ9OXgBbE4qOSz47LUed7XfdQJiRjJ5Vjtgl3S_M"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzMzgwN2ViLTY5YjItNDMzNS1hYjZlLTQ3NmU0MDhhZTQyNyIsImlhdCI6MTU5MTQyMTc4MywiZXhwIjoxNTkxNDIyMzgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.1Wg0dsGx0qGd6eQygBFCGBE0H7-0DKLTZOnqV2uQNDI"
 					},
 					{
 						"key": "Content-Type",
@@ -459,7 +459,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"test_id\":\"NICED-1\",\n    \"device_id\":\"SenP-0001\",\n    \"patient_name\":\"Pranab Lodh\",\n    \"dob\":\"06/08/1993\",\n    \"sex\":\"Other\",\n    \"mobile\":\"9804710805\",\n    \"email\":\"pranablodh@outlook.com\",\n    \"picture\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_data\":\"MTAsMjAwLA0KMjAsMTAw\"\n}"
+					"raw": "{\n\t\"test_id\":\"NICED-1\",\n    \"device_id\":\"SenP-0001\",\n    \"patient_name\":\"Pranab Lodh\",\n    \"dob\":\"06/08/1993\",\n    \"address\":\"Sreeenagar 3 No.\",\n    \"sex\":\"Other\",\n    \"mobile\":\"9804710805\",\n    \"email\":\"pranablodh@outlook.com\",\n    \"picture\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_data\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"ioxy_data\":\"MTAsMjAwLA0KMjAsMTAw\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:4040/mobile/submitTest",

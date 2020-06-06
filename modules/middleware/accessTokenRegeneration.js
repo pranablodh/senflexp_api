@@ -62,7 +62,7 @@ const accessTokenRegeneration = (req, response) =>
 
         else
         {
-            return response.status(400).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
+            return response.status(401).send({'Status':false, 'Message': 'Invalid Token', 'Data': []});
         }
     });
 }

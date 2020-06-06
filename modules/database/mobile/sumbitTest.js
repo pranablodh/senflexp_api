@@ -30,6 +30,11 @@ const submitTest = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Invalid Device ID.', 'Data': []});
     }
 
+    if(!req.body.address)
+    {
+        return response.status(400).send({'Status':false, 'Message': 'Invalid Address.', 'Data': []});
+    }
+
     if(!inputValidator.isVaidBase64String(req.body.test_data))
     {
         return response.status(400).send({'Status':false, 'Message': 'Invalid Test Data.', 'Data': []});
@@ -50,13 +55,13 @@ const submitTest = (req, response) =>
     WHERE device_id = (SELECT device_id FROM consumer_device_list WHERE device_id = (SELECT device_id FROM device_master
     WHERE serial_no = $2))))
     INSERT INTO lab_test_master(lab_test_id, lab_test_identification, consumer_id, technician_id, device_id, test_time, 
-    patient_name, date_of_birth, sex, mobile, email, picture, test_data) VALUES((SELECT coalesce(max(lab_test_id)+1, 1)
+    patient_name, date_of_birth, sex, mobile, patient_address, email, picture, test_data, ioxy_data) VALUES((SELECT coalesce(max(lab_test_id)+1, 1)
     FROM lab_test_master), $1, (SELECT consumer_id FROM consumer_master WHERE consumer_id = (SELECT consumer_id FROM technician_master
     WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $10))),
     (SELECT technician_id FROM technician_master WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $10)),
     (SELECT device_id FROM consumer_device_list WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $10)
-    AND device_id = (SELECT device_id FROM device_master WHERE serial_no = $2)), CURRENT_TIMESTAMP, $3, $4, $5, $6, $7, $8, $9) 
-    RETURNING *`
+    AND device_id = (SELECT device_id FROM device_master WHERE serial_no = $2)), CURRENT_TIMESTAMP, $3, $4, $5, $6, $11, $7, $8, $9, 
+    $12) RETURNING *`
 
     const values = 
     [
@@ -69,7 +74,9 @@ const submitTest = (req, response) =>
         req.body.email,
         req.body.picture,
         req.body.test_data,
-        req.body.user_code
+        req.body.user_code,
+        req.body.address,
+        req.body.ioxy_data
     ];
 
     db.pool.query(createQuery, values, (err, res)=>
