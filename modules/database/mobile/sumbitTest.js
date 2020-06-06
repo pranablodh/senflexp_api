@@ -35,16 +35,6 @@ const submitTest = (req, response) =>
         return response.status(400).send({'Status':false, 'Message': 'Invalid Address.', 'Data': []});
     }
 
-    if(!inputValidator.isVaidBase64String(req.body.test_data))
-    {
-        return response.status(400).send({'Status':false, 'Message': 'Invalid Test Data.', 'Data': []});
-    }
-
-    if(!inputValidator.isVaidBase64String(req.body.picture))
-    {
-        return response.status(400).send({'Status':false, 'Message': 'Invalid Picture Data.', 'Data': []});
-    }
-
     if(req.body.sex != 'Male' & req.body.sex != 'Female' & req.body.sex != 'Other')
     {
         return response.status(400).send({'Status':false, 'Message': 'Invalid Gender.', 'Data': []});
