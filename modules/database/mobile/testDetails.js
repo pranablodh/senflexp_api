@@ -3,18 +3,20 @@ const { infoLog, debugLog } = require('../../logger/logger');
 const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testDetails = (req, response) =>
-{
-    const createQuery = `SELECT ltm.lab_test_identification as test_id, ltm.test_time, ltm.patient_name, ltm.picture,
-    ltm.processed_flag, dm.serial_no
+{    
+    const createQuery = `SELECT ltm.lab_test_identification as test_id, 
+    ltm.test_time, ltm.patient_name, ltm.picture, ltm.processed_flag, dm.serial_no
     FROM lab_test_master ltm
     INNER JOIN device_master dm ON dm.device_id = ltm.device_id
     WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $1)
     AND consumer_id = (SELECT consumer_id FROM technician_master WHERE technician_id = 
-    (SELECT user_id FROM user_master WHERE user_code = $1))`
+    (SELECT user_id FROM user_master WHERE user_code = $1)) AND ltm.patient_name LIKE $2 LIMIT 10 OFFSET $3`
 
     const values = 
     [
-        req.body.user_code
+        req.body.user_code,
+        `%${req.body.name}%`,
+        req.body.offset
     ];
 
     db.pool.query(createQuery, values, (err, res)=>
@@ -30,14 +32,13 @@ const testDetails = (req, response) =>
         else if(res.rows.length === 0)
         {
             db.pool.end;
-            console.log(res.rows)
             return response.status(404).send({'Status':false, 'Message': 'No Data Found.', 'Data': []}); 
         }
         
         else if(res.rows.length > 0)
         {
             db.pool.end;
-            return response.status(200).send({'Status':true, 'Message': 'Test Data Found.', 'Data': [res.rows]}); 
+            return response.status(200).send({'Status':true, 'Message': 'Test Data Found.', 'Data': res.rows}); 
         }
     });
 }

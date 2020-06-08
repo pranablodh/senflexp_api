@@ -16,7 +16,7 @@ router.get('/userDetails', authentication.authentication, technicianValidator.te
 router.get('/assignedDevice', authentication.authentication, technicianValidator.technicianValidator, assignedDevice.assignedDevice);
 router.post('/newAccessToken', regenerateAccsessToken.accessTokenRegeneration);
 router.post('/submitTest', authentication.authentication, technicianValidator.technicianValidator, submitTest.submitTest);
-router.get('/testList', authentication.authentication, technicianValidator.technicianValidator, testDetails.testDetails);
+router.post('/testList', authentication.authentication, technicianValidator.technicianValidator, testDetails.testDetails);
 
 module.exports = 
 {
