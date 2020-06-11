@@ -4,28 +4,15 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testDetails = (req, response) =>
 {    
-    const createQuery = `SELECT ltm.lab_test_identification as test_id, ltm.test_time, ltm.submission_time,
-    ltm.processed_flag, pm.picture, pm.patient_name, dm.serial_no
-    FROM lab_test_master ltm
-    INNER JOIN patient_master pm ON pm.patient_id = ltm.patient_id
-    INNER JOIN device_master dm ON dm.device_id = ltm.device_id
-    WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $1)
-    AND consumer_id = (SELECT consumer_id FROM technician_master WHERE technician_id = 
-    (SELECT user_id FROM user_master WHERE user_code = $1)) AND pm.patient_name LIKE $2 LIMIT 10 OFFSET $3`
+    const createQuery = `SELECT lab_test_identification as test_id, consumer_id, technician_id, test_data, ioxy_data
+    FROM lab_test_master WHERE processed_flag = 'N' LIMIT 1`
 
-    const values = 
-    [
-        req.body.user_code,
-        `%${req.body.name}%`,
-        req.body.offset
-    ];
-
-    db.pool.query(createQuery, values, (err, res)=>
+    db.pool.query(createQuery, (err, res)=>
     {
         if(err)
         {
             db.pool.end;
-            debugLog('Mobile Get Test Info: ', err);
+            debugLog('Analysis Get Test Data: ', err);
             console.log(err);
             return response.status(500).send({'Status':false, 'Message': 'Internal Server Error.', 'Data': []});               
         }

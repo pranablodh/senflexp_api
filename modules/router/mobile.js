@@ -9,13 +9,14 @@ const regenerateAccsessToken = require('../middleware/accessTokenRegeneration');
 const assignedDevice         = require('../database/mobile/asignedDevice');
 const submitTest             = require('../database/mobile/sumbitTest');
 const testDetails            = require('../database/mobile/testDetails');
+const opsCode                = require('../database/mobile/opsCodeGen');
 
 router.post('/login', login.login);
 router.delete('/logout', authentication.authentication, technicianValidator.technicianValidator, logout.logout);
 router.get('/userDetails', authentication.authentication, technicianValidator.technicianValidator, getUserInfo.getDetails);
 router.get('/assignedDevice', authentication.authentication, technicianValidator.technicianValidator, assignedDevice.assignedDevice);
 router.post('/newAccessToken', regenerateAccsessToken.accessTokenRegeneration);
-router.post('/submitTest', authentication.authentication, technicianValidator.technicianValidator, submitTest.submitTest);
+router.post('/submitTest', authentication.authentication, opsCode.opsCodeGen, technicianValidator.technicianValidator, submitTest.submitTest);
 router.post('/testList', authentication.authentication, technicianValidator.technicianValidator, testDetails.testDetails);
 
 module.exports = 

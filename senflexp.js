@@ -11,15 +11,16 @@ const mobileRouter     = require('./modules/router/mobile');
 const deviceRouter     = require('./modules/router/device');
 const consumerRouter   = require('./modules/router/consumer');
 const technicianRouter = require('./modules/router/technician');
+const analysisRouter   = require('./modules/router/analysis');
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.use(bodyParser.json());
+app.use(bodyParser.json({limit: '50mb'}));
 app.use(cors());
 app.use('/common', commonRouter.router);
 app.use('/mobile', mobileRouter.router);
 app.use('/device', deviceRouter.router);
 app.use('/consumer', consumerRouter.router);
 app.use('/technician', technicianRouter.router);
+app.use('/analysis', analysisRouter.router);
 
 makeDir.makeDir();
 
