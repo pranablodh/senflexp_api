@@ -57,7 +57,7 @@ const submitTest = (req, response) =>
     AND device_id = (SELECT device_id FROM device_master WHERE serial_no = $10)), (SELECT consumer_id FROM consumer_master WHERE 
     consumer_id = (SELECT consumer_id FROM technician_master WHERE technician_id = (SELECT user_id FROM user_master WHERE 
     user_code = $15))), (SELECT technician_id FROM technician_master WHERE technician_id = (SELECT user_id FROM user_master WHERE 
-    user_code = $15)), CAST(test_time AS DATE), CURRENT_TIMESTAMP, $16, (SELECT coalesce(max(patient_id)+1, 1) 
+    user_code = $15)), test_time::timestamp, CURRENT_TIMESTAMP, $16, (SELECT coalesce(max(patient_id)+1, 1) 
     FROM patient_master), test_data, ioxy_data, last_lab_test_id FROM data RETURNING *`
 
     const values = 
