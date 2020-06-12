@@ -4,8 +4,9 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testDetails = (req, response) =>
 {    
-    const createQuery = `SELECT lab_test_identification as test_id, consumer_id, technician_id, test_data, ioxy_data
-    FROM lab_test_master WHERE processed_flag = 'N' LIMIT 1`
+    const createQuery = `SELECT ops_code, test_data, ioxy_data FROM lab_test_master WHERE processed_flag = 'N'
+    ORDER BY "submission_time" DESC
+    LIMIT 1`
 
     db.pool.query(createQuery, (err, res)=>
     {
