@@ -3,7 +3,7 @@ const { infoLog, debugLog } = require('../../logger/logger');
 const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testReport = (req, response) =>
-{    
+{   
     const createQuery = `SELECT report as pdf, test_graph as image FROM report_master WHERE lab_test_id =
     (SELECT lab_test_id FROM lab_test_master WHERE ops_code = $1)`
 
