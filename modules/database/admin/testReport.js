@@ -4,8 +4,8 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testReport = (req, response) =>
 {    
-    const createQuery = `SELECT processed_data, roi_data, report, test_result, report_generation_time
-    FROM report_master WHERE lab_test_id = (SELECT lab_test_id FROM lab_test_master WHERE ops_code = $1)`
+    const createQuery = `SELECT report as pdf, test_graph as image FROM report_master WHERE lab_test_id =
+    (SELECT lab_test_id FROM lab_test_master WHERE ops_code = $1)`
 
     const values =
     [
