@@ -11,7 +11,7 @@ const testDetails = (req, response) =>
     INNER JOIN device_master dm ON dm.device_id = ltm.device_id
     WHERE technician_id = (SELECT user_id FROM user_master WHERE user_code = $1)
     AND consumer_id = (SELECT consumer_id FROM technician_master WHERE technician_id = 
-    (SELECT user_id FROM user_master WHERE user_code = $1)) AND pm.patient_name LIKE $2
+    (SELECT user_id FROM user_master WHERE user_code = $1)) AND LOWER(pm.patient_name) ILIKE LOWER($2)
     ORDER BY "test_time" DESC
     LIMIT 10 OFFSET $3`
 

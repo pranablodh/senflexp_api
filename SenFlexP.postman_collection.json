@@ -52,7 +52,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"user\":\"1111111111\",\n\t\"password\":\"Qwerty@1234\"\n}",
+					"raw": "{\n\t\"user\":\"2222222222\",\n\t\"password\":\"Qwerty@1234\"\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -311,7 +311,7 @@
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzMzgwN2ViLTY5YjItNDMzNS1hYjZlLTQ3NmU0MDhhZTQyNyIsImlhdCI6MTU5MTQyMTc4MywiZXhwIjoxNTkxNDIyMzgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.1Wg0dsGx0qGd6eQygBFCGBE0H7-0DKLTZOnqV2uQNDI"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6ImExM2RiMjU5LTM4MDQtNDk5Ny1hMmZmLWZmMjVlMjU0NThlNCIsImlhdCI6MTU5MTU5MzQ3NCwiZXhwIjoxNTkxNTk1Mjc0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.87Hst6tAuu2E7JHzXBzojtVXJStZ6fCgnmZQAP6_p0c"
 					},
 					{
 						"key": "Content-Type",
@@ -321,7 +321,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"ti\":\"17496760-de58-4fdb-8090-1d4c8f8f305a\"\n}",
+					"raw": "",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -444,12 +444,15 @@
 		{
 			"name": "User Mobile Submit Test",
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzMzgwN2ViLTY5YjItNDMzNS1hYjZlLTQ3NmU0MDhhZTQyNyIsImlhdCI6MTU5MTQyMTc4MywiZXhwIjoxNTkxNDIyMzgzLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.1Wg0dsGx0qGd6eQygBFCGBE0H7-0DKLTZOnqV2uQNDI"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjA4ZTgzYjBlLWI5ZTctNDZmMC1hNzFhLWEzODQ2ZThkZTlhOCIsImlhdCI6MTU5MTg2NTc4MCwiZXhwIjoxNTk0NDU3NzgwLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.YhD9v2IStRB3-TWoZX0RAVM0ms45su2AxFwuLECgU-Y"
 					},
 					{
 						"key": "Content-Type",
@@ -459,7 +462,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"test_id\":\"NICED-1\",\n    \"device_id\":\"SenP-0001\",\n    \"patient_name\":\"Pranab Lodh\",\n    \"dob\":\"06/08/1993\",\n    \"address\":\"Sreeenagar 3 No.\",\n    \"sex\":\"Other\",\n    \"mobile\":\"9804710805\",\n    \"email\":\"pranablodh@outlook.com\",\n    \"picture\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_data\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"ioxy_data\":\"MTAsMjAwLA0KMjAsMTAw\"\n}"
+					"raw": "{\n\t\"test_id\":\"NICED-1\",\n    \"device_id\":\"SenP-0001\",\n    \"patient_name\":\"Pranab Lodh\",\n    \"dob\":\"06/08/1993\",\n    \"address\":\"Sreeenagar 3 No.\",\n    \"sex\":\"Other\",\n    \"mobile\":\"9804710805\",\n    \"email\":\"pranablodh@outlook.com\",\n    \"picture\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_data\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"ioxy_data\":\"MTAsMjAwLA0KMjAsMTAw\",\n    \"test_time\": \"2020-06-11T19:07:01.546+0530\",\n    \"veri_flag\": \"Y\",\n    \"last_lab_test_id\":\"XCE\"\n}"
 				},
 				"url": {
 					"raw": "http://localhost:4040/mobile/submitTest",
@@ -478,16 +481,13 @@
 		},
 		{
 			"name": "User Mobile Test List",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
 			"request": {
-				"method": "GET",
+				"method": "POST",
 				"header": [
 					{
 						"key": "x-access-token",
 						"type": "text",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjJhNGYyMTgwLTA2ODUtNDRhMy04MzQxLTM5MmY5YTJmM2NiNyIsImlhdCI6MTU5MTAwMTU2MiwiZXhwIjoxNTkxMDAyMTYyLCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.PFP7aiYLuC40GJYVD3mdBgSIH66kObb3Oyw2DAg9UEg"
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjJhNWNlMTQ2LTc1MTEtNDU4OS05MDMxLTE1MzdhMGE0YTZmNSIsImlhdCI6MTU5MjA0MzcwNCwiZXhwIjoxNTk0NjM1NzA0LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.yP6oOqSdAoUltMCxuWzcM--6NSxLz3hEc3463CSnivE"
 					},
 					{
 						"key": "Content-Type",
@@ -497,7 +497,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": ""
+					"raw": "{\n\t\"name\":\"Tg\",\n\t\"offset\": 0\n}"
 				},
 				"url": {
 					"raw": "http://localhost:4040/mobile/testList",
@@ -1456,6 +1456,198 @@
 					"path": [
 						"technician",
 						"selfDetails"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analysis Get Data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "python-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzYzRhZmIzLTZjYTgtNGMzYy1iOTU4LWFjNjEwZGViYjU5ZiIsImlhdCI6MTU5MTc2NjA5MCwiZXhwIjozMzE0OTM2NjA5MCwiaXNzIjoiaHR0cHM6Ly9zZW5mbGV4LmluIn0.w9k5fvF7StbSdvl2Ca8LR65frNvflXXtGBD7gmRgXww",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/analysis/getTestData",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"analysis",
+						"getTestData"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Analysis Submit Report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "python-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJUMjAxNVAiLCJ0b2tlbl9pZCI6IjYzYzRhZmIzLTZjYTgtNGMzYy1iOTU4LWFjNjEwZGViYjU5ZiIsImlhdCI6MTU5MTc2NjA5MCwiZXhwIjozMzE0OTM2NjA5MCwiaXNzIjoiaHR0cHM6Ly9zZW5mbGV4LmluIn0.w9k5fvF7StbSdvl2Ca8LR65frNvflXXtGBD7gmRgXww",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ops_code\":\"8435580591bd35194923fa645d9f2969\",\r\n    \"processed_data\":\"dummy\",\r\n    \"roi_data\":\"dummy\",\r\n    \"report\":\"dummy\",\r\n    \"test_result\":{\"result\":\"demo\"}\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4040/analysis/submitReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"analysis",
+						"submitReport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Test Results",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjU1ZGU5MDA0LTgxODQtNDZhNS1hMjUyLTg0YWIyZDQ5Y2QwYyIsImlhdCI6MTU5MjExMjU5NSwiZXhwIjoxNTk0NzA0NTk1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.wDwWk2K-zHupYlYA87-yVlH558Ouvp3Tz8znrRYhyFE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/admin/testResults",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"admin",
+						"testResults"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Test Report",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjU1ZGU5MDA0LTgxODQtNDZhNS1hMjUyLTg0YWIyZDQ5Y2QwYyIsImlhdCI6MTU5MjExMjU5NSwiZXhwIjoxNTk0NzA0NTk1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.wDwWk2K-zHupYlYA87-yVlH558Ouvp3Tz8znrRYhyFE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ops_code\":\"8435580591bd35194923fa645d9f2969\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:4040/admin/testReport",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"admin",
+						"testReport"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"user\":\"9804710805\",\r\n\t\"password\":\"Qwerty@12346\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:4040/admin/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"admin",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Logout",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-access-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2NvZGUiOiJBMjAxMVAiLCJ0b2tlbl9pZCI6IjU1ZGU5MDA0LTgxODQtNDZhNS1hMjUyLTg0YWIyZDQ5Y2QwYyIsImlhdCI6MTU5MjExMjU5NSwiZXhwIjoxNTk0NzA0NTk1LCJpc3MiOiJodHRwczovL3NlbmZsZXguaW4ifQ.wDwWk2K-zHupYlYA87-yVlH558Ouvp3Tz8znrRYhyFE",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:4040/admin/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "4040",
+					"path": [
+						"admin",
+						"logout"
 					]
 				}
 			},
