@@ -4,8 +4,8 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testResults = (req, response) =>
 {    
-    const createQuery = `SELECT ltm.lab_test_identification, ltm.ops_code,  pm.patient_name, pm.date_of_birth, 
-    pm.sex, pm.mobile, pm.email, cm.lab_name
+    const createQuery = `SELECT ltm.lab_test_identification, ltm.ops_code, pm.patient_name,
+    to_char(pm.date_of_birth, 'MM-DD-YYYY') as dob, pm.sex, pm.mobile, pm.email, cm.lab_name
     FROM lab_test_master ltm
     INNER JOIN patient_master pm ON pm.patient_id = ltm.patient_id
     INNER JOIN consumer_master cm ON cm.consumer_id = ltm.consumer_id
