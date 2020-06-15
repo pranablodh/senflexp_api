@@ -44,7 +44,9 @@ const testResults = (req, response) =>
                                 "email": res.rows[i].email,
                                 "lab_name": res.rows[i].lab_name,
                                 "Link":"Download Report",
-                                "uri": "https://api.senflex.in/files/report.pdf"
+                                "Link_image":"See Graph",
+                                "uri": "https://api.senflex.in/files/report.pdf",
+                                "uri_image": "https://api.senflex.in/image/001.jpeg"
                             });
             }
             return response.status(200).send({'Status':true, 'Message': 'Test Result Found.', 'Data': object}); 

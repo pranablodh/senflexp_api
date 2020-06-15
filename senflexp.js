@@ -24,6 +24,7 @@ app.use('/technician', technicianRouter.router);
 app.use('/analysis', analysisRouter.router);
 app.use('/admin', adminRouter.router);
 app.use('/files', express.static('public/pdf'));
+app.use('/image', express.static('public/image'));
 
 makeDir.makeDir();
 
