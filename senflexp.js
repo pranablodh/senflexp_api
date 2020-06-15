@@ -23,6 +23,7 @@ app.use('/consumer', consumerRouter.router);
 app.use('/technician', technicianRouter.router);
 app.use('/analysis', analysisRouter.router);
 app.use('/admin', adminRouter.router);
+app.use('/files', express.static('public/pdf'));
 
 makeDir.makeDir();
 

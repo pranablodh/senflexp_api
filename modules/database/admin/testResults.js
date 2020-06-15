@@ -43,7 +43,8 @@ const testResults = (req, response) =>
                                 "mobile": res.rows[i].mobile,
                                 "email": res.rows[i].email,
                                 "lab_name": res.rows[i].lab_name,
-                                "Link":"Download Report"
+                                "Link":"Download Report",
+                                "uri": "https://api.senflex.in/files/report.pdf"
                             });
             }
             return response.status(200).send({'Status':true, 'Message': 'Test Result Found.', 'Data': object}); 
