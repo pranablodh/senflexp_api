@@ -31,7 +31,22 @@ const testResults = (req, response) =>
         else if(res.rows.length > 0)
         {
             db.pool.end;
-            return response.status(200).send({'Status':true, 'Message': 'Test Result Found.', 'Data': res.rows}); 
+            let object = [];
+            for(var i = 0; i < res.rows.length; i++)
+            {
+                object.push({   
+                                "lab_test_identification": res.rows[i].lab_test_identification,
+                                "ops_code": res.rows[i].ops_code,
+                                "patient_name": res.rows[i].patient_name,
+                                "dob": res.rows[i].dob,
+                                "sex": res.rows[i].sex,
+                                "mobile": res.rows[i].mobile,
+                                "email": res.rows[i].email,
+                                "lab_name": res.rows[i].lab_name,
+                                "Link":"Download Report"
+                            });
+            }
+            return response.status(200).send({'Status':true, 'Message': 'Test Result Found.', 'Data': object}); 
         }
     });
 }
