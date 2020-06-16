@@ -4,8 +4,9 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 
 const testDetails = (req, response) =>
 {    
-    const createQuery = `SELECT ltm.ops_code, ltm.test_data, ltm.ioxy_data, ltm.test_time, ltm.submission_time,
-    ltm.lab_test_id, ltm.last_lab_test_id, pm.patient_name, pm.date_of_birth, pm.sex, pm.mobile, pm.email, 
+    const createQuery = `SELECT ltm.ops_code, ltm.test_data, ltm.ioxy_data, to_char(ltm.test_time, 'DD/MM/YYYY HH24:MI:SS TZ') as test_time, 
+	to_char(ltm.submission_time, 'DD/MM/YYYY HH24:MI:SS TZ') as submission_time, to_char(ltm.collection_time, 'DD/MM/YYYY HH24:MI:SS TZ') as collection_time,
+    ltm.lab_test_id, ltm.last_lab_test_id, pm.patient_name, to_char(pm.date_of_birth, 'DD/MM/YYYY') as date_of_birth, pm.sex, pm.mobile, pm.email, 
     pm.patient_address, pm.picture as patient_picture, pm.phone_no_verification_flag, cm.lab_name, cm.split_lab_name, cm.lab_logo, ua.address_type, cm.website,
 	ua.house_apartment || ', ' || ua.locality as con_adr1, 
 	ua.city_village_id || ', ' || state_m.state_name || ', ' || country.nicename || ' - ' || ua.pincode as con_adr2, ucr.primary_email, 
