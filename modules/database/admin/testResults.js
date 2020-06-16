@@ -5,10 +5,12 @@ const inputValidator        = require('../../inputValidator/inputValidator');
 const testResults = (req, response) =>
 {    
     const createQuery = `SELECT ltm.lab_test_identification, ltm.ops_code, pm.patient_name,
-    to_char(pm.date_of_birth, 'MM-DD-YYYY') as dob, pm.sex, pm.mobile, pm.email, cm.lab_name
+    to_char(pm.date_of_birth, 'MM-DD-YYYY') as dob, pm.sex, pm.mobile, pm.email, cm.lab_name,
+    rm.report as report_uri, rm.test_graph as graph_uri
     FROM lab_test_master ltm
     INNER JOIN patient_master pm ON pm.patient_id = ltm.patient_id
     INNER JOIN consumer_master cm ON cm.consumer_id = ltm.consumer_id
+    INNER JOIN report_master rm ON rm.lab_test_id = ltm.lab_test_id
     WHERE ltm.processed_flag = 'Y'
     ORDER BY "test_time" DESC`
 
@@ -45,8 +47,8 @@ const testResults = (req, response) =>
                                 "lab_name": res.rows[i].lab_name,
                                 "Link":"Download Report",
                                 "Link_image":"See Graph",
-                                "uri": "https://api.senflex.in/senflexp/files/report.pdf",
-                                "uri_image": "https://api.senflex.in/senflexp/image/001.jpeg"
+                                "uri": "https://api.senflex.in/senflexp/files/" + res.rows[i].report_uri,
+                                "uri_image": "https://api.senflex.in/senflexp/image/" + res.rows[i].graph_uri
                             });
             }
             return response.status(200).send({'Status':true, 'Message': 'Test Result Found.', 'Data': object}); 
