@@ -9,7 +9,7 @@ const testDetails = (req, response) =>
     pm.patient_address, pm.picture as patient_picture, pm.phone_no_verification_flag, cm.lab_name, cm.split_lab_name, cm.lab_logo, ua.address_type, cm.website,
 	ua.house_apartment || ', ' || ua.locality as con_adr1, 
 	ua.city_village_id || ', ' || state_m.state_name || ', ' || country.nicename || ' - ' || ua.pincode as con_adr2, ucr.primary_email, 
-    ucr.primary_mobile, dm.serial_no, um.user_code
+    ucr.primary_mobile, dm.serial_no, um.user_code, ltm.specimen, ltm.clinical_data, ltm.doctor_name
     FROM lab_test_master ltm
     INNER JOIN patient_master pm ON pm.patient_id = ltm.patient_id
     INNER JOIN consumer_master cm ON cm.consumer_id = ltm.consumer_id
