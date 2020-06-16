@@ -6,7 +6,7 @@ const testDetails = (req, response) =>
 {    
     const createQuery = `SELECT ltm.ops_code, ltm.test_data, ltm.ioxy_data, ltm.test_time, ltm.submission_time,
     ltm.lab_test_id, ltm.last_lab_test_id, pm.patient_name, pm.date_of_birth, pm.sex, pm.mobile, pm.email, 
-    pm.patient_address, pm.picture as patient_picture, pm.phone_no_verification_flag, cm.lab_name, cm.lab_logo, ua.address_type, 
+    pm.patient_address, pm.picture as patient_picture, pm.phone_no_verification_flag, cm.lab_name, cm.split_lab_name, cm.lab_logo, ua.address_type, 
     ua.house_apartment, ua.locality, ua.pincode, ua.police_station, ua.post_office, ua.district, ua.landmark, ucr.primary_email, 
     ucr.primary_mobile, dm.serial_no, um.user_code
     FROM lab_test_master ltm
