@@ -42,8 +42,8 @@ const submitTest = (req, response) =>
 
     const createQuery = `WITH
     data(patient_name, date_of_birth, sex, mobile, email, address, picture, phone_no_verification_flag, test_id, device_id, test_time, 
-    test_data, ioxy_data, last_lab_test_id, ops_code, user_code, collection_time)
-    AS(VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)),
+    test_data, ioxy_data, last_lab_test_id, ops_code, user_code, collection_time, specimen)
+    AS(VALUES($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17, $18)),
     upd AS(UPDATE consumer_device_list SET operation_cycle = (SELECT coalesce(max(operation_cycle)+1, 1) FROM consumer_device_list
     WHERE device_id = (SELECT device_id FROM consumer_device_list WHERE device_id = (SELECT device_id FROM device_master
     WHERE serial_no = $2)))),
@@ -51,14 +51,14 @@ const submitTest = (req, response) =>
     phone_no_verification_flag) SELECT(SELECT coalesce(max(patient_id)+1, 1) FROM patient_master), patient_name, CAST(date_of_birth AS 
     DATE), sex, mobile, email, address, picture, phone_no_verification_flag FROM data)
     INSERT INTO lab_test_master(lab_test_id, lab_test_identification, device_id, consumer_id, technician_id, test_time,
-    submission_time, ops_code, patient_id, test_data, ioxy_data, last_lab_test_id, collection_time)
+    submission_time, ops_code, patient_id, test_data, ioxy_data, last_lab_test_id, collection_time, specimen)
     SELECT (SELECT coalesce(max(lab_test_id)+1, 1) FROM lab_test_master), test_id, (SELECT device_id FROM consumer_device_list WHERE
     technician_id = (SELECT user_id FROM user_master WHERE user_code = $15)
     AND device_id = (SELECT device_id FROM device_master WHERE serial_no = $10)), (SELECT consumer_id FROM consumer_master WHERE 
     consumer_id = (SELECT consumer_id FROM technician_master WHERE technician_id = (SELECT user_id FROM user_master WHERE 
     user_code = $15))), (SELECT technician_id FROM technician_master WHERE technician_id = (SELECT user_id FROM user_master WHERE 
     user_code = $15)), test_time::timestamp, CURRENT_TIMESTAMP, $16, (SELECT coalesce(max(patient_id)+1, 1) 
-    FROM patient_master), test_data, ioxy_data, last_lab_test_id, collection_time::timestamp FROM data RETURNING *`
+    FROM patient_master), test_data, ioxy_data, last_lab_test_id, collection_time::timestamp, specimen FROM data RETURNING *`
 
     const values = 
     [
@@ -78,7 +78,8 @@ const submitTest = (req, response) =>
         req.body.last_lab_test_id,
         req.body.user_code,
         req.body.ops_code,
-        req.body.sample_time
+        req.body.sample_time,
+        req.body.specimen
     ];
 
     db.pool.query(createQuery, values, (err, res)=>
