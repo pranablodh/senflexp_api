@@ -27,7 +27,7 @@ const getMenuDetails = (req, response) => {
             const result = res.rows;
             const ret = [];
             result.forEach(function (v) {
-                let obj = { category: v.category };
+                let obj = { name: v.category };
                 let arr = [];
                 v.children.forEach((i) =>
                     arr.push(JSON.parse(i.replace("'", "")))
@@ -38,7 +38,7 @@ const getMenuDetails = (req, response) => {
             return response.status(200).send({
                 Status: true,
                 Message: "Menu List Found For User.",
-                Data: [ret],
+                Data: ret,
             });
         }
     });
