@@ -38,7 +38,7 @@ const getMenuDetails = (req, response) => {
             return response.status(200).send({
                 Status: true,
                 Message: "Menu List Found For User.",
-                Data: [ret],
+                Data: ret,
             });
         }
     });
