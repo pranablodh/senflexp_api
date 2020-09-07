@@ -8,7 +8,7 @@ const submitReport = (req, response) =>
     const createQuery = `WITH
     upd AS(UPDATE lab_test_master SET processed_flag = 'Y' WHERE ops_code = $1)
     INSERT INTO report_master(lab_test_id, roi_data, report, test_graph, test_result) VALUES
-    ((SELECT patient_id FROM lab_test_master WHERE ops_code = $1), $2, $3, $4, $5) RETURNING report`
+    ((SELECT lab_test_id FROM lab_test_master WHERE ops_code = $1), $2, $3, $4, $5) RETURNING report`
 
     const values = 
     [
